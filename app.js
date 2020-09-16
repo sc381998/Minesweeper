@@ -30,7 +30,9 @@ const createGrid = () => {
   }
 };
 const handleClick = (el) => {
-  console.log(...arr);
+  if (el.classList.contains("selected")) return;
+  el.classList.add("selected");
+
   let flag = false;
   for (let i = 0; i < noOfBomb; i++) {
     if (arr[i].toString() === el.id) {
