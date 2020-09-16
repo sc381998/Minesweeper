@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <title>Minesweeper</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,10 +29,19 @@
       </div>
       <div class="gameOverContainer hide center" id="gameOverContainer">
         <div class="gameOver">
+            <div class="gameWinContainer hide" id="gameWinContainer">
+                Congratulations, you WIN
+            </div>
           <h3 class="yourScore">Your Score : <span id="totalScore"></span></h3>
-          <!-- <button class="btn exit" onclick="exit()">Exit</button> -->
+          <div class="d-flex justify-content-around">
+          <button class="btn exit" onclick="exit()">Exit</button>
           <button class="btn replay" onclick="startNewGame()">Replay</button>
+          </div>
+          <h4 class="highScore">High Score : <span id="highScore"></span>
         </div>
+      </div>
+      <div class="gameWinnerContainer" id="gameWinnerContainer">
+        <!-- <h4 class="winnerText">You WIN</div> -->
       </div>
     </div>
     <script
