@@ -21,15 +21,12 @@ body {
   display: flex;
   flex-direction: column;
   border: 2px solid white;
-  border-radius: 15px;
+  border-radius: 16px;
   background: #f7bd52;
   color: white;
-  padding: 5px 30px;
-  font-size: 20px;
+  padding: 2px 20px;
+  font-size: 17px;
   text-transform: uppercase;
-  margin-left: 70px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .container {
@@ -61,9 +58,58 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 3px;
-  /* grid-gap: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 2px;
   box-shadow: inset 0px -10px 5px -8px #aaa;
+}
+.blueOne {
+  color: #88dded;
+  background: #24bbed;
+  font-size: 20px;
+  font-weight: 900;
+  box-shadow: inset 0px -10px 5px -8px #0095db;
+}
+.lightBlueZero {
+  color: #88dded;
+  background-color: #d1edf2;
+  font-size: 20px;
+  font-weight: 900;
+  box-shadow: inset 0px -10px 5px -8px #60c0d1;
+}
+.yellowTwo {
+  color: #ffff66;
+  background: #ffdd43;
+  font-size: 20px;
+  font-weight: 900;
+  box-shadow: inset 0px -10px 5px -8px #f7891e;
+}
+.pinkThree {
+  color: #fe66ba;
+  background: #fb4499;
+  font-size: 20px;
+  font-weight: 900;
+  box-shadow: inset 0px -10px 5px -8px #db106d;
+}
+.highScore {
+  font-size: 18px;
+  font-weight: 700;
+  /* margin-left: 84px; */
+  margin-left: auto;
+  margin-top: 5px;
+  margin-right: auto;
+}
+.exit {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 15px;
+  background: orangered;
+  color: white;
+  padding: 2px 20px;
+  font-size: 17px;
+  text-transform: uppercase;
 }
 .center {
   display: flex;
@@ -89,7 +135,7 @@ body {
   border: 10px solid #00bcd4;
   border-radius: 10px;
   /* height: 180px; */
-  padding: 20px;
+  padding: 7px;
   opacity: 1;
   color: #00bcd4;
 }
@@ -104,10 +150,6 @@ body {
 }
 .red ::before {
   content: "&#128163";
-}
-.green {
-  background-color: #d1edf2;
-  box-shadow: inset 0px -10px 5px -8px #60c0d1;
 }
 
 .blue-pill {
